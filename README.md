@@ -29,11 +29,11 @@ Projeto desenvolvido durante o curso de PHP do Básico ao Avançado.
 </p>
 
 <p align="center">
-  <img alt="todo" src=".github/mobile-connect.png" width="100%">
+  <img alt="todo" src=".github/moviestar-edit-profile.png" width="100%">
 </p>
 
 <p align="center">
-  <img alt="todo" src=".github/mobile-connect.png" width="100%">
+  <img alt="todo" src=".github/moviestar-adc-movie.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
