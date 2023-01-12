@@ -1,6 +1,6 @@
 <?php 
-$logout = "http://localhost/moviestarmoviestar/logout.php";
-$login = "http://localhost/moviestar/moviestar/auth.php";
+$logout = "http://localhost/moviestar/logout.php";
+$login = "http://localhost/moviestar/auth.php";
 
 // Verifica se o usuário está logado
 $userDao = new UserDao($conn, $BASE_URL);
@@ -24,14 +24,12 @@ $userData = $userDao->verifyToken(false);
     </div>
     <div id="footer-links-container">
         <ul>
-            <li><a href="<?= $BASE_URL ?>moviestar/newmovie.php">Adicionar filme</a></li>
-            <?php if ($userData){ 
-                echo "<li><a href=$logout>Sair</a></li>";
-                } else {
-                  echo  "<li><a href=$login>Entrar / Cadastrar</a></li>";
-                }
-            ?>
-            
+            <li><a href="<?= $BASE_URL ?>newmovie.php">Adicionar filme</a></li>
+            <?php if ($userData): ?> 
+                <li><a href=<?=$logout?>>Sair</a></li>
+            <?php else: ?> 
+                <li><a href=<?=$login?>>Entrar / Cadastrar</a></li>
+            <?php endif; ?> 
         </ul>
     </div>
     <p>&copy; 2022 Thomas Ricardo</p>
